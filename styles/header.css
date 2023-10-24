@@ -8,21 +8,6 @@
   margin-left: 1em;
 }
 
-.container__button:checked ~ .container__rotulo > .header__menu {
-  background-image: url("/assets/Menu\ Aberto.svg");
-  width: 5vw;
-  
-  
-  
-}
-
-.container__button:checked ~.container__rotulo{
-  background: var(--blue-degrade);
-  padding-right: 0.5em;
-  padding-top: 0.3em;
-  
-}
-
 .header {
   background-color: var(--branco);
   display: flex;
