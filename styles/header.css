@@ -1,0 +1,192 @@
+.header__menu{
+  width: 24px;
+  height: 24px;
+  background-image: url("/assets/Menu.svg");
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 1em;
+}
+
+.container__button:checked ~ .container__rotulo > .header__menu {
+  background-image: url("/assets/Menu\ Aberto.svg");
+  width: 5vw;
+  
+  
+  
+}
+
+.container__button:checked ~.container__rotulo{
+  background: var(--blue-degrade);
+  padding-right: 0.5em;
+  padding-top: 0.3em;
+  
+}
+
+.header {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container__button{
+  display: none;
+}
+
+.container__button:checked ~ .list__menu{
+  display: block;
+   
+}
+
+.container__img{
+  padding: 1em;
+}
+
+.list__menu{
+  display: none;
+  position: absolute;
+  top: 100%;
+  width:60vw;
+
+}
+
+
+
+.list__menu__title,
+ .list__menu__item{
+  padding: 1em ;
+  background-color: var(--branco);
+}
+
+
+.list__menu__title{
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.list__menu__link{
+   background: var(--blue-degrade); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 15px;
+}
+
+
+.container__title, .options{
+ display: none;
+}
+
+.container__text{
+  display: none;
+}
+
+@media screen and (min-width: 1024px){
+  
+  .container__title, .container__title--bold{
+  font-family: var(--font-josefin);
+    font-size: 30px;
+    display: flex;
+    
+  }
+
+
+  .container__title{
+    font-weight: 400;
+    margin-top: 0.1em;
+  }
+
+  .container__title--bold{
+    font-weight: 700;
+  }
+
+  .options{
+    display: flex;
+  }
+
+  .options__itens{
+    padding: 0 1em;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  .options__link{
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .container__transparent, .header__menu{
+    display: none;
+  }
+
+  .options__botao:checked ~ .list__menu{
+    display: block;
+    width: auto;
+  }
+
+  .options__botao{
+    display: none;
+  }
+
+  .options__botao:checked ~ .options__rotulo > .options__itens{
+    background: var(--blue-degrade);
+    color: var(--branco);
+  }
+
+
+  .options__itens{
+    padding: 2em;
+  }
+
+
+}
+
+
+
+
+@media screen and (min-width: 1728px){
+
+  .container__link{
+    display: flex;
+    align-items: center;
+
+  }
+
+  .header{
+    padding: 0 2em;
+  }
+
+  .options{
+    margin-right: auto;
+  }
+
+  .container__title{
+    margin-right: 2em;
+  }
+
+  .container__text{
+    display: block;
+  }
+
+  .list__menu__item:hover{
+    background: var(--blue-degrade);
+    
+  }
+
+  .list__menu__item:hover > .list__menu__link{
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
+  }
+
+}
+
+
+

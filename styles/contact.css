@@ -1,0 +1,85 @@
+.contact{
+  background-color: var(--branco);
+  padding: 2em;
+  text-align: center;
+}
+
+
+.contact__grid{
+margin-bottom: 2em;
+display: flex;
+flex-direction: column;
+
+
+}
+
+.contact__title{
+  margin-bottom: 0.5em;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.contact__text{
+  font-weight: 300;
+  color: var(--blue);
+
+}
+
+.search__contact{
+  padding: 0.8em;
+  width: 100%;
+  border: 1px solid var(--blue);
+  border-radius: 2em;
+  color: var(--blue);
+
+}
+
+.search__contact::placeholder{
+  background-image: url("/assets/Email.svg");
+  background-repeat: no-repeat;
+  background-position: 1em;
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--font-poppins);
+  color: var(--blue);
+
+}
+
+
+
+@media screen and (min-width: 1024px){
+
+  .contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contact__title{
+  font-size: 24px;
+}
+
+.contact__grid{
+  margin-right: 2em;
+  width: 40%;
+  text-align: start;
+}
+
+
+.search__contact{
+  width: 30%;
+}
+
+
+
+}
+
+@media screen and (min-width: 1728px){
+  .contact{
+    padding: 3em 24vw;
+  }
+  
+
+}
